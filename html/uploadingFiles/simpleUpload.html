@@ -13,6 +13,7 @@
 
   for(var i=1;i<lines.length;i++){
 
+      if (lines[i].length<2) {break;} // Client mistakenly has an empty line at the end
       var obj = {};
       var currentline=lines[i].split(",");
 
